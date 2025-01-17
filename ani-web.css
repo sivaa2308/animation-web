@@ -1,20 +1,113 @@
-*{
-    margin:0;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-main{
-
-    width: 100%;
-    height: 100vh;
-    background: url('gym3.jpg');
-    background-size: cover;
-    background-position: center;  
-    margin: 0;
+main {
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
 }
-.opacity{
+
+.opacity {
     width: 100%;
     height: 100vh;
     background-color: black;
-    opacity: 0.4;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+   
+}
+
+.m1 {
+    padding: 0rem 5rem;
+    min-height: 100vh;
+    background: url('gym1.jpg') no-repeat center center/cover;
+    position: relative;
+    display: flex; /* Ensure flex layout for this section */
+    flex-direction: column; /* Stack contents vertically */
+}
+
+nav {
+    width: 100%; /* Ensure nav spans full width */
+    display: flex; /* Flexbox for navigation */
+    justify-content: space-between; /* Distribute logo and menu */
+    align-items: center; /* Align items vertically */
+    min-height: 10vh;
+    padding: 0 2rem; /* Add padding for spacing */
+    z-index: 4;
+    position: relative;
+}
+
+#Logo {
+    font-size: 2.5rem; /* Adjust logo font size */
+    font-family: "Lobster Two", serif;
+  font-weight: 700;
+  font-style: normal;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-link {
+    display: flex; /* Flex layout for nav items */
+    list-style: none; /* Remove default list styles */
+    gap: 3rem; /* Add spacing between nav items */
+}
+
+.nav-link li {
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer; /* Change cursor to pointer for interactivity */
+}
+
+.intro{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 4;
+   
+}
+    
+.intro-text{
+    color: white;
+    font-size: 3vw;
+    font-family: "Alata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hide{
+    padding: 12px;
+}
+
+.slider{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(4, 34, 71);
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    transform: translateY(100%);
+
+}
+
+.hide{
+    background-color: black;
+    overflow: hidden;
+}
+.hide span{
+    transform: translateY(100%);
+    display: inline-block;
 }
